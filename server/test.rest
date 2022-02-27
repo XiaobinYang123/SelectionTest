@@ -1,1 +1,81 @@
 GET http://localhost:3333/submissions
+
+### 
+
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "home",
+  "quantity": 43,
+  "foodName": "s",
+  "foodWeight": 30,
+  "date": "1999-06-02"
+}
+
+###
+GET http://localhost:3333/submissions/hey 
+
+### 
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "sdf",
+  "quantity": 43,
+  "foodName": "s",
+  "foodWeight": "3",
+  "date": "66"
+}
+
+###
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "",
+  "quantity": 43,
+  "foodName": "s",
+  "foodWeight": "3",
+  "date": "1995-03-20"
+}
+
+
+###
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "",
+  "quantity": 43,
+  "foodName": "s",
+  "foodWeight": "3",
+  "date": "1995-03-20"
+}
+
+
+###
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "wef",
+  "quantity": 0,
+  "foodName": "s",
+  "foodWeight": "50",
+  "date": "1995-03-20"
+}
+
+
+###
+POST http://localhost:3333/submissions/add
+Content-Type: application/json
+
+{
+  "location": "wef",
+  "quantity": 50,
+  "foodName": "s",
+  "foodWeight": "0",
+  "date": "1wef"
+}
+
