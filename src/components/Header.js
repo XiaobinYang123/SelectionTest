@@ -20,7 +20,7 @@ export default function Header({ setData }) {
       </Grid>
       <Typography color="text.primary" variant="body2">
         Scientists want understand how ducks are being fed in parks around the
-        world. The following table including all the submissions.
+        world. The following table includes all the submissions.
       </Typography>
     </Box>
   );

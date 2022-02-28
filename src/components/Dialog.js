@@ -8,7 +8,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import MuiAlert from "@mui/material/Alert";
 import InputAdornment from "@mui/material/InputAdornment";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
@@ -26,12 +25,14 @@ const FormSchema = yup
     location: yup.string().required("Location is required"),
     quantity: yup
       .number()
+      .typeError("Quantity must be a number")
       .required("Quantity is required")
       .positive("Quantity must be postive")
       .integer("Quantity must be an integer"),
     foodName: yup.string().required("Food name is required"),
     foodWeight: yup
       .number("Food Weight must be a number")
+      .typeError("Food Weight must be a number")
       .required("Food Weight is required")
       .positive("Food Weight must be postive"),
     date: yup
@@ -61,14 +62,14 @@ export default function Header({ setData }) {
     axios
       .post(url + "/add", data)
       .then((res) => {
-        setMessage("Submission is successfully");
+        setMessage("Submission is successful");
         setData((prevState) => {
           return [res.data, ...prevState];
         });
         setOpenSnackBar(true);
       })
       .catch((err) => {
-        setMessage("Submission is unsuccessfully");
+        setMessage("Submission is unsuccessful");
         setOpenSnackBar(true);
       });
   };
@@ -89,7 +90,7 @@ export default function Header({ setData }) {
             <DialogTitle>Add a new submission</DialogTitle>
             <DialogContent>
               <DialogContentText>
-                Please fill out the following form
+                Please fill out the following form.
               </DialogContentText>
               <Stack spacing={2}>
                 <TextField

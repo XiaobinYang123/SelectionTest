@@ -8,7 +8,7 @@ const columns = [
     field: "location",
     headerName: "Location",
     width: 130,
-    headerClassName: "super-app-theme-header",
+    headerClassName: "super-app-theme--header",
     headerAlign: "center",
     align: "center",
   },

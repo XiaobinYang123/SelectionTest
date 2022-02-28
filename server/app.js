@@ -9,7 +9,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/submissions", {
 });
 
 mongoose.connection.on("connected", () => {
-  console.log("MongoDB connected successfully.");
+  console.log("MongoDB is connected successfully.");
 });
 
 app.use(cors());
