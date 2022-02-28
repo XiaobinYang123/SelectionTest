@@ -38,3 +38,8 @@ The serve will run on port 3333. You should see that it is successfully connecte
 ```yarn start```\
 The project will run on port 3000. Then it will open the web page on you browser.
 
+
+![image](https://user-images.githubusercontent.com/33335352/155918700-3cb51c74-0eff-4d95-afdb-1458ffdf5d83.png)
+
+![image](https://user-images.githubusercontent.com/33335352/155918749-ed6d57ee-fb39-4920-be20-bbec36bef8ab.png)
+
