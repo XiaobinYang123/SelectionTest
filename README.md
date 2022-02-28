@@ -12,9 +12,9 @@ User is able to view all submissions or make a submission.
 
 ## About Project
 
-Material-UI
-React
-Expressjs
+Material-UI\
+React\
+Expressjs\
 Mongodb
 
 ### How to run the project
