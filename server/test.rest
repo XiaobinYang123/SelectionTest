@@ -76,6 +76,6 @@ Content-Type: application/json
   "quantity": 50,
   "foodName": "s",
   "foodWeight": "0",
-  "date": "1wef"
+  "date": "2040-03-19"
 }
 

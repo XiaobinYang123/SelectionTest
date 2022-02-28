@@ -4,7 +4,14 @@ import Box from "@mui/material/Box";
 import moment from "moment";
 
 const columns = [
-  { field: "location", headerName: "Location", width: 130, align: "center" },
+  {
+    field: "location",
+    headerName: "Location",
+    width: 130,
+    headerClassName: "super-app-theme-header",
+    headerAlign: "center",
+    align: "center",
+  },
   {
     field: "quantity",
     headerName: "Quantity of Ducks",
@@ -39,7 +46,7 @@ const columns = [
     headerClassName: "super-app-theme--header",
     headerAlign: "center",
     valueFormatter: (params) =>
-      moment(params.value).format("MMMM Do YYYY, h:mm:ss a"),
+      moment(params.value).format("MMMM Do YYYY, h:mm a"),
   },
 ];
 

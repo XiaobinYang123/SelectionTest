@@ -16,7 +16,9 @@ const addSubmissionValidate = [
   check("date", "Date is required")
     .notEmpty()
     .isISO8601()
-    .withMessage("Date should be valid"),
+    .withMessage("Date should be valid")
+    .isBefore()
+    .withMessage("Date can not be in the future"),
 ];
 
 exports.addSubmissionValidate = addSubmissionValidate;

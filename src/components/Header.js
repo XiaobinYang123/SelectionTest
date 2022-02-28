@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 import Dialog from "./Dialog";
 
-export default function Header() {
+export default function Header({ setData }) {
   return (
     <Box sx={{ my: 3, mx: 2 }}>
       <Grid container alignItems="center">
@@ -15,7 +15,7 @@ export default function Header() {
           </Typography>
         </Grid>
         <Grid item>
-          <Dialog />
+          <Dialog setData={setData} />
         </Grid>
       </Grid>
       <Typography color="text.primary" variant="body2">
